@@ -10,18 +10,24 @@ class MeteorUpdaterHoc extends React.Component {
     };
   }
 
+  hookOnMigrate(props) {
+    if (!props.disabled) {
+      Reload._onMigrate(() => {
+        this.setState({ newVersionAvailable: true });
+        return [false];
+      });
+    }
+  }
+
   componentDidMount() {
-    Reload._onMigrate(() => {
-      this.setState({ newVersionAvailable: true });
-      return [false];
-    });
+    this.hookOnMigrate(this.props);
   }
 
   render() {
     if (this.state.newVersionAvailable) {
       return this.props.children;
     }
-    return <div />;
+    return null;
   }
 }
 
