@@ -12,7 +12,7 @@ meteor add kschingiz:meteor-react-update-notifier
 
 ```
 import React from "react";
-import MeteorUpdateHoc from "meteor/kschingiz:meteor-react-update-notifier";
+import MeteorUpdateNotifier from "meteor/kschingiz:meteor-react-update-notifier";
 
 class App extends React.Component {
   constructor(props) {
@@ -27,13 +27,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <MeteorUpdateHoc>
+      <MeteorUpdateNotifier>
         <div>
           <h4>New Version is available, do you want to reload?</h4>
           <input type="button" value="Update" onClick={this.onUpdate} />
           <input type="button" value="Not yet" onClick={this.hide}/>
         </div>
-      </MeteorUpdateHoc>
+      </MeteorUpdateNotifier>
     );
   }
 }

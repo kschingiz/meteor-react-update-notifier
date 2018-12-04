@@ -1,7 +1,7 @@
 import React from "react";
 import { Reload } from "meteor/reload";
 
-class MeteorUpdaterHoc extends React.Component {
+class MeteorUpdateNotifier extends React.Component {
   constructor(props) {
     super(props);
 
@@ -31,4 +31,4 @@ class MeteorUpdaterHoc extends React.Component {
   }
 }
 
-export default MeteorUpdaterHoc;
+export default MeteorUpdateNotifier;

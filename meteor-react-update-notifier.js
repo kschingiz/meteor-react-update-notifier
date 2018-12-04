@@ -1,4 +1,4 @@
 import React from "react";
-import MeteorUpdaterHoc from "./notifier-hoc";
+import MeteorUpdateNotifier from "./notifier";
 
-export default MeteorUpdaterHoc;
+export default MeteorUpdateNotifier;
