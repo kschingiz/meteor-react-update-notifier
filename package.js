@@ -1,6 +1,6 @@
 Package.describe({
   name: "kschingiz:meteor-react-update-notifier",
-  version: "1.0.0",
+  version: "1.1.0",
   // Brief, one-line summary of the package.
   summary:
     "This package allows you to notify your users about meteor app update",

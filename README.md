@@ -6,11 +6,13 @@ If the app is updated you can give your user a choice whether he/she wants to up
 
 ## Installation
 
+```bash
 meteor add kschingiz:meteor-react-update-notifier
+```
 
 ## Usage
 
-```
+```js
 import React from "react";
 import MeteorUpdateNotifier from "meteor/kschingiz:meteor-react-update-notifier";
 
